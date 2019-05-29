@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'yaml'
 require 'faker'
 require 'date'
@@ -12,13 +14,10 @@ require_relative 'create_database'
 require_relative 'statistic'
 require_relative 'validation/errors'
 
-
-
+# main class
 class Library
-
   include CreateDatabase
   include Statistics
-
 
   def initialize
     if File.exist?('seeds.yaml')
@@ -38,10 +37,8 @@ class Library
     most_popular_books
     number_of_readers_of_popular_book
   end
-
 end
-
 library = Library.new
 puts library.statistics
 
-#puts library.delete_file
+# puts library.delete_file

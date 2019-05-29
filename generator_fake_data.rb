@@ -1,5 +1,7 @@
-module GeneratorFAkeData
+# frozen_string_literal: true
 
+# module GeneratorFAkeData
+module GeneratorFAkeData
   class << self
     def fake_data
       {
@@ -11,6 +13,7 @@ module GeneratorFAkeData
     end
 
     private
+
     def authors
       @authors = Array.new(15) do
         Author.new(

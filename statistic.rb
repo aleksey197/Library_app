@@ -1,10 +1,12 @@
-module Statistics
+# frozen_string_literal: true
 
+# module Statistics
+module Statistics
   def find_most_popular_element(quantity, item_name)
     result = @orders
-      .group_by(&item_name)
-      .max_by(quantity) { |_item, orders| orders.size }
-      .map(&:first)
+             .group_by(&item_name)
+             .max_by(quantity) { |_item, orders| orders.size }
+             .map(&:first)
 
     quantity == 1 ? result.first : result
   end
@@ -23,9 +25,9 @@ module Statistics
     books = find_most_popular_element(quantity, :book)
 
     number_of_readers_of_popular_book = @orders
-      .select { |order| books.include? order.book }
-      .uniq(&:reader)
-      .size
+                                        .select { |order| books.include? order.book }
+                                        .uniq(&:reader)
+                                        .size
     puts "Number of readers of the most popular books is #{number_of_readers_of_popular_book}."
   end
 end

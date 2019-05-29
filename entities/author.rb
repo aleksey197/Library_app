@@ -1,5 +1,8 @@
+# frozen_string_literal: true
+
 require_relative '../validation/errors'
 
+# class Author
 class Author
   include Errors
 

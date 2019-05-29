@@ -1,5 +1,8 @@
+# frozen_string_literal: true
+
 require_relative '../validation/errors'
 
+# class Book
 class Book
   include Errors
 

@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# module CreateDatabase
 module CreateDatabase
   def save_data
     data = {
