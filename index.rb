@@ -10,6 +10,8 @@ require_relative 'entities/order'
 require_relative 'generator_fake_data'
 require_relative 'create_database'
 require_relative 'statistic'
+require_relative 'validation/errors'
+
 
 
 class Library
@@ -27,6 +29,10 @@ class Library
     end
   end
 
+  def delete_file
+    delete_data
+  end
+
   def statistics
     top_reader
     most_popular_books
@@ -37,3 +43,5 @@ end
 
 library = Library.new
 puts library.statistics
+
+#puts library.delete_file

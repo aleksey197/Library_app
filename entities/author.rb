@@ -1,8 +1,13 @@
+require_relative '../validation/errors'
+
 class Author
+  include Errors
 
   attr_reader :name, :biography
 
   def initialize(name:, biography: '')
+    raise EmptyStringError if name == '' || !(name.is_a? String)
+
     @name = name
     @biography = biography
   end

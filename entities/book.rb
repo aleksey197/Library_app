@@ -1,8 +1,14 @@
+require_relative '../validation/errors'
+
 class Book
+  include Errors
 
   attr_reader :title, :author
 
   def initialize(title:, author:)
+    raise EmptyStringError if title == '' || !(title.is_a? String)
+    raise WrongClassError if title == !(author.is_a? Author)
+
     @title = title
     @author = author
   end
