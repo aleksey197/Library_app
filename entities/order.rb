@@ -9,7 +9,8 @@ class Order
   attr_reader :book, :reader, :date
 
   def initialize(book:, reader:, date:)
-    raise WrongClassError if !(book.is_a? Book) || !(reader.is_a? Reader) || !(date.is_a? Date)
+    raise WrongClassError if !(book.is_a? Book) || !(reader.is_a? Reader)
+    raise WrongClassError unless date.is_a? Date
 
     @book = book
     @reader = reader

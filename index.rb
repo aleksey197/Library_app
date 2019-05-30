@@ -35,7 +35,7 @@ class Library
   def statistics
     top_reader
     most_popular_books
-    number_of_readers_of_popular_book
+    number_of_readers_popular_book
   end
 end
 library = Library.new
