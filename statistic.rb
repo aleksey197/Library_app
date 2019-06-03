@@ -5,7 +5,7 @@ module Statistics
   def find_most_popular_element(quantity, item_name)
     result = @orders
              .group_by(&item_name)
-             .max_by(quantity) { |_, orders| orders.size }
+             .max_by(quantity) { |_, orders| orders.length }
              .map(&:first)
 
     quantity == 1 ? result.first : result
@@ -27,7 +27,7 @@ module Statistics
     num_readers_popbook = @orders
                           .select { |order| books.include? order.book }
                           .uniq(&:reader)
-                          .size
+                          .length
     puts "Number of readers of the popular books is #{num_readers_popbook}."
   end
 end

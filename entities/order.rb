@@ -1,11 +1,7 @@
 # frozen_string_literal: true
 
-require_relative '../validation/errors'
-
 # class Order
 class Order
-  include Errors
-
   attr_reader :book, :reader, :date
 
   def initialize(book:, reader:, date:)
