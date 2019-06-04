@@ -1,7 +1,11 @@
 # frozen_string_literal: true
 
+require_relative '../validation/errors'
+
 # class Author
 class Author
+  include Errors
+
   attr_reader :name, :biography
 
   def initialize(name:, biography: '')
