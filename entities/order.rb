@@ -1,16 +1,15 @@
 # frozen_string_literal: true
 
-require_relative '../validation/errors'
+require_relative '../validation/validation'
 
 # class Order
 class Order
-  include Errors
+  include Validate
 
   attr_reader :book, :reader, :date
 
   def initialize(book:, reader:, date:)
-    raise WrongClassError if !(book.is_a? Book) || !(reader.is_a? Reader)
-    raise WrongClassError unless date.is_a? Date
+    validate(book, reader, date)
 
     @book = book
     @reader = reader
@@ -19,5 +18,13 @@ class Order
 
   def to_s
     "Order: #{@book}, #{@reader}, #{@date}"
+  end
+
+  private
+
+  def validate(book, reader, date)
+    check_classbasic(book, Book)
+    check_classbasic(reader, Reader)
+    check_classbasic(date, Date)
   end
 end

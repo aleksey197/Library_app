@@ -39,7 +39,7 @@ module GeneratorFAkeData
           email: Faker::Internet.email,
           city: Faker::Address.city,
           street: Faker::Address.street_name,
-          house: Faker::Address.building_number
+          house: Faker::Address.building_number.to_i
         )
       end
     end

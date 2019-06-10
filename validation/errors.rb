@@ -9,10 +9,17 @@ module Errors
     end
   end
 
-  # class EmptyStringErro
-  class EmptyStringError < StandardError
+  # class WrongNumberError
+  class WrongNumberError < StandardError
     def initialize
-      super('Argument is empty or problem with data types!')
+      super('Number must be a positive!')
+    end
+  end
+
+  # class EmptyError
+  class EmptyError < StandardError
+    def initialize
+      super('Argument is empty!')
     end
   end
 end

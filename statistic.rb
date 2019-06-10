@@ -12,22 +12,19 @@ module Statistics
   end
 
   def top_reader(quantity: 1)
-    top_reader = find_most_popular_element(quantity, :reader)
-    puts "The top reader is #{top_reader}.\""
+    find_most_popular_element(quantity, :reader)
   end
 
   def most_popular_books(quantity: 1)
-    most_popular_books = find_most_popular_element(quantity, :book)
-    puts "The most popular book is #{most_popular_books}.\""
+    find_most_popular_element(quantity, :book)
   end
 
   def number_of_readers_popular_book(quantity: 3)
     books = find_most_popular_element(quantity, :book)
 
-    num_readers_popbook = @orders
-                          .select { |order| books.include? order.book }
-                          .uniq(&:reader)
-                          .length
-    puts "Number of readers of the popular books is #{num_readers_popbook}."
+    @orders
+      .select { |order| books.include? order.book }
+      .uniq(&:reader)
+      .length
   end
 end
