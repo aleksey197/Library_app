@@ -28,8 +28,7 @@ module Database
   end
 
   def generate_data
-    data = GeneratorFAkeData.fake_data
-    add_entity_to_library data
+    data = GeneratorFakeData.fake_data
   end
 
   def delete_data
