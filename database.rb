@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# module CreateDatabase
+# module save, load, delete databases
 module Database
   PATH_FILE = 'seeds.yaml'.to_s
 
