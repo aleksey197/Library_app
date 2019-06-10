@@ -12,5 +12,3 @@ puts 'Number of readers of the popular books is:'
 puts library.number_of_readers_popular_book
 
 library.save_data
-
-# library.delete_file
