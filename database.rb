@@ -16,7 +16,7 @@ module Database
   end
 
   def load_data
-    if File.exist?('seeds.yaml')
+    if File.exist?(PATH_FILE)
       yaml_file = File.read(PATH_FILE)
       data = Psych.safe_load(
         yaml_file, [Symbol, Date, Author, Book, Reader, Order], [], true
