@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# module CreateDatabase
+# module save, load, delete databases
 module Database
   PATH_FILE = 'seeds.yaml'.to_s
 
@@ -16,20 +16,19 @@ module Database
   end
 
   def load_data
-    if File.exist?('seeds.yaml')
-      yaml_file = File.read(PATH_FILE)
-      data = Psych.safe_load(
-        yaml_file, [Symbol, Date, Author, Book, Reader, Order], [], true
-      )
-      add_entity_to_library data
-    else
-      generate_data
-    end
+    data = File.exist?(PATH_FILE) ? load_library_from_seeds : generate_data
+    add_entity_to_library(data)
+  end
+
+  def load_library_from_seeds
+    yaml_file = File.read(PATH_FILE)
+    Psych.safe_load(
+      yaml_file, [Symbol, Date, Author, Book, Reader, Order], [], true
+    )
   end
 
   def generate_data
-    data = GeneratorFAkeData.fake_data
-    add_entity_to_library data
+    GeneratorFakeData.fake_data
   end
 
   def delete_data

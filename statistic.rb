@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# module Statistics
+# module statistical methods
 module Statistics
   def find_most_popular_element(quantity, item_name)
     result = @orders

@@ -2,7 +2,7 @@
 
 require_relative 'errors'
 
-# module Validate
+# data validation module
 module Validate
   include Errors
 

@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-# module GeneratorFAkeData
-module GeneratorFAkeData
+# module fake data generator
+module GeneratorFakeData
   class << self
     def fake_data
       {
