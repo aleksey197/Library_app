@@ -1,0 +1,415 @@
+---
+:authors:
+- !ruby/object:Author
+  name: Nicky Dare
+  biography: Author Biography
+- &4 !ruby/object:Author
+  name: Trinidad Spinka
+  biography: Author Biography
+- &5 !ruby/object:Author
+  name: Conchita Littel
+  biography: Author Biography
+- !ruby/object:Author
+  name: Inger Tremblay Jr.
+  biography: Author Biography
+- &1 !ruby/object:Author
+  name: Richelle Zboncak
+  biography: Author Biography
+- &8 !ruby/object:Author
+  name: Dewey Lang
+  biography: Author Biography
+- !ruby/object:Author
+  name: Mr. Ardella Haley
+  biography: Author Biography
+- &7 !ruby/object:Author
+  name: Dr. Corazon Wisoky
+  biography: Author Biography
+- !ruby/object:Author
+  name: Juliane Skiles
+  biography: Author Biography
+- !ruby/object:Author
+  name: Errol Ebert Jr.
+  biography: Author Biography
+- !ruby/object:Author
+  name: Precious Willms
+  biography: Author Biography
+- &6 !ruby/object:Author
+  name: Ardella Ebert
+  biography: Author Biography
+- &3 !ruby/object:Author
+  name: Merrill McDermott
+  biography: Author Biography
+- !ruby/object:Author
+  name: Deeanna Durgan
+  biography: Author Biography
+- &2 !ruby/object:Author
+  name: Linwood Torp
+  biography: Author Biography
+:books:
+- &40 !ruby/object:Book
+  title: All Passion Spent
+  author: *1
+- &17 !ruby/object:Book
+  title: Consider Phlebas
+  author: *2
+- &20 !ruby/object:Book
+  title: Jacob Have I Loved
+  author: *3
+- &24 !ruby/object:Book
+  title: The Golden Apples of the Sun
+  author: *2
+- !ruby/object:Book
+  title: Tirra Lirra by the River
+  author: *2
+- &9 !ruby/object:Book
+  title: Jesting Pilate
+  author: *4
+- &19 !ruby/object:Book
+  title: Many Waters
+  author: *1
+- &36 !ruby/object:Book
+  title: Quo Vadis
+  author: *5
+- &32 !ruby/object:Book
+  title: Specimen Days
+  author: *6
+- &28 !ruby/object:Book
+  title: For Whom the Bell Tolls
+  author: *3
+- &26 !ruby/object:Book
+  title: The Wings of the Dove
+  author: *7
+- &15 !ruby/object:Book
+  title: The Sun Also Rises
+  author: *5
+- &13 !ruby/object:Book
+  title: Lilies of the Field
+  author: *8
+- &22 !ruby/object:Book
+  title: Mr Standfast
+  author: *8
+- &11 !ruby/object:Book
+  title: In Death Ground
+  author: *8
+:readers:
+- &25 !ruby/object:Reader
+  name: Mr. Buck Gleichner
+  email: bradley@jakubowski.io
+  city: Gloverland
+  street: Leuschke Inlet
+  house: 817
+- &38 !ruby/object:Reader
+  name: Omer Lockman
+  email: ewa@cummings.org
+  city: Port Luetta
+  street: Kerluke Inlet
+  house: 7547
+- &10 !ruby/object:Reader
+  name: Rhett Reilly
+  email: dolly@bernhard.biz
+  city: Jolynton
+  street: Anderson Lodge
+  house: 2893
+- &33 !ruby/object:Reader
+  name: Kati Mraz
+  email: eli@purdy.co
+  city: New Jennaburgh
+  street: Elvis Oval
+  house: 4631
+- &30 !ruby/object:Reader
+  name: Denver Buckridge
+  email: jane@weinat.name
+  city: Lake Darrelstad
+  street: Larson Summit
+  house: 25386
+- &18 !ruby/object:Reader
+  name: Kam Bashirian
+  email: omegako@berge.name
+  city: West Alvaton
+  street: Liza Mountain
+  house: 10178
+- &14 !ruby/object:Reader
+  name: Antione Cassin DVM
+  email: alschiller@schultzcollier.org
+  city: Marilynmouth
+  street: Shellie Summit
+  house: 82266
+- &12 !ruby/object:Reader
+  name: Malorie Gottlieb
+  email: trish@kihnjaskolski.info
+  city: Aufderharshire
+  street: Reilly Vista
+  house: 98083
+- &29 !ruby/object:Reader
+  name: Tamica Mohr
+  email: eboni@terrylesch.info
+  city: Jacobsville
+  street: Romaguera Cliff
+  house: 87395
+- &21 !ruby/object:Reader
+  name: Ignacio Johnson
+  email: fidel@zemlakerdman.net
+  city: East Mailemouth
+  street: Morar Forks
+  house: 472
+- &35 !ruby/object:Reader
+  name: Quincy Okuneva
+  email: remazboncak@williamson.biz
+  city: Stiedemannton
+  street: Funk Mill
+  house: 17418
+- !ruby/object:Reader
+  name: Claude Crona
+  email: murray@parkerbaumbach.com
+  city: Leuschkeside
+  street: Adan Throughway
+  house: 125
+- &37 !ruby/object:Reader
+  name: Ms. Meridith Doyle
+  email: delmer@reilly.com
+  city: Hermannmouth
+  street: Morar Roads
+  house: 30257
+- &23 !ruby/object:Reader
+  name: Mika Wintheiser
+  email: soilabailey@jast.org
+  city: West Latoyia
+  street: Floyd Ridges
+  house: 979
+- &34 !ruby/object:Reader
+  name: Miss Carlee Larkin
+  email: leesa@nader.info
+  city: Kuhicbury
+  street: Fisher Wells
+  house: 829
+- &27 !ruby/object:Reader
+  name: Frederic Auer
+  email: melitahyatt@wiza.info
+  city: New Olin
+  street: Turner Ports
+  house: 39305
+- !ruby/object:Reader
+  name: Gino Schoen
+  email: fridaspencer@satterfield.io
+  city: Lake Rupert
+  street: Emard Ramp
+  house: 322
+- &39 !ruby/object:Reader
+  name: Dr. Marci Johnston
+  email: angeletrantow@hoppe.biz
+  city: Jastfort
+  street: Ruecker Squares
+  house: 7170
+- &16 !ruby/object:Reader
+  name: Elroy Stroman
+  email: tracey@feil.net
+  city: New Jina
+  street: Graham Fork
+  house: 13901
+- &31 !ruby/object:Reader
+  name: Omega Pagac PhD
+  email: lemuelfahey@hamill.name
+  city: Liviahaven
+  street: Murray Mews
+  house: 2949
+:orders:
+- !ruby/object:Order
+  book: *9
+  reader: *10
+  date: 2019-06-11
+- !ruby/object:Order
+  book: *11
+  reader: *12
+  date: 2019-06-11
+- !ruby/object:Order
+  book: *13
+  reader: *14
+  date: 2019-06-11
+- !ruby/object:Order
+  book: *15
+  reader: *16
+  date: 2019-06-11
+- !ruby/object:Order
+  book: *17
+  reader: *18
+  date: 2019-06-11
+- !ruby/object:Order
+  book: *19
+  reader: *18
+  date: 2019-06-11
+- !ruby/object:Order
+  book: *20
+  reader: *21
+  date: 2019-06-11
+- !ruby/object:Order
+  book: *17
+  reader: *10
+  date: 2019-06-11
+- !ruby/object:Order
+  book: *22
+  reader: *10
+  date: 2019-06-11
+- !ruby/object:Order
+  book: *11
+  reader: *23
+  date: 2019-06-11
+- !ruby/object:Order
+  book: *9
+  reader: *23
+  date: 2019-06-11
+- !ruby/object:Order
+  book: *24
+  reader: *12
+  date: 2019-06-11
+- !ruby/object:Order
+  book: *19
+  reader: *14
+  date: 2019-06-11
+- !ruby/object:Order
+  book: *22
+  reader: *10
+  date: 2019-06-11
+- !ruby/object:Order
+  book: *11
+  reader: *21
+  date: 2019-06-11
+- !ruby/object:Order
+  book: *9
+  reader: *25
+  date: 2019-06-11
+- !ruby/object:Order
+  book: *26
+  reader: *27
+  date: 2019-06-11
+- !ruby/object:Order
+  book: *22
+  reader: *14
+  date: 2019-06-11
+- !ruby/object:Order
+  book: *28
+  reader: *29
+  date: 2019-06-11
+- !ruby/object:Order
+  book: *17
+  reader: *30
+  date: 2019-06-11
+- !ruby/object:Order
+  book: *9
+  reader: *31
+  date: 2019-06-11
+- !ruby/object:Order
+  book: *15
+  reader: *12
+  date: 2019-06-11
+- !ruby/object:Order
+  book: *32
+  reader: *21
+  date: 2019-06-11
+- !ruby/object:Order
+  book: *22
+  reader: *14
+  date: 2019-06-11
+- !ruby/object:Order
+  book: *13
+  reader: *14
+  date: 2019-06-11
+- !ruby/object:Order
+  book: *22
+  reader: *30
+  date: 2019-06-11
+- !ruby/object:Order
+  book: *15
+  reader: *14
+  date: 2019-06-11
+- !ruby/object:Order
+  book: *20
+  reader: *25
+  date: 2019-06-11
+- !ruby/object:Order
+  book: *22
+  reader: *33
+  date: 2019-06-11
+- !ruby/object:Order
+  book: *26
+  reader: *34
+  date: 2019-06-11
+- !ruby/object:Order
+  book: *26
+  reader: *34
+  date: 2019-06-11
+- !ruby/object:Order
+  book: *11
+  reader: *16
+  date: 2019-06-11
+- !ruby/object:Order
+  book: *20
+  reader: *23
+  date: 2019-06-11
+- !ruby/object:Order
+  book: *17
+  reader: *31
+  date: 2019-06-11
+- !ruby/object:Order
+  book: *28
+  reader: *35
+  date: 2019-06-11
+- !ruby/object:Order
+  book: *36
+  reader: *33
+  date: 2019-06-11
+- !ruby/object:Order
+  book: *26
+  reader: *37
+  date: 2019-06-11
+- !ruby/object:Order
+  book: *26
+  reader: *33
+  date: 2019-06-11
+- !ruby/object:Order
+  book: *17
+  reader: *38
+  date: 2019-06-11
+- !ruby/object:Order
+  book: *17
+  reader: *30
+  date: 2019-06-11
+- !ruby/object:Order
+  book: *13
+  reader: *10
+  date: 2019-06-11
+- !ruby/object:Order
+  book: *28
+  reader: *21
+  date: 2019-06-11
+- !ruby/object:Order
+  book: *17
+  reader: *37
+  date: 2019-06-11
+- !ruby/object:Order
+  book: *36
+  reader: *35
+  date: 2019-06-11
+- !ruby/object:Order
+  book: *19
+  reader: *34
+  date: 2019-06-11
+- !ruby/object:Order
+  book: *36
+  reader: *39
+  date: 2019-06-11
+- !ruby/object:Order
+  book: *17
+  reader: *16
+  date: 2019-06-11
+- !ruby/object:Order
+  book: *40
+  reader: *35
+  date: 2019-06-11
+- !ruby/object:Order
+  book: *28
+  reader: *21
+  date: 2019-06-11
+- !ruby/object:Order
+  book: *32
+  reader: *12
+  date: 2019-06-11
